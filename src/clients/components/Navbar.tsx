@@ -10,7 +10,6 @@ export default function Navbar() {
                 top: 0,
                 width: "100%",
                 height: "3em",
-                typography: "body1",
                 borderBottom: 1,
                 borderColor: "divider",
                 ".drawer": {
@@ -24,10 +23,11 @@ export default function Navbar() {
                     left: "48%",
                     top: "0.8em",
                 },
+                backgroundColor: "#fff",
             }}
         >
             <Drawers />
-            <Link className="home" sx={{ color: "black" }} href="/" underline="none">
+            <Link className="home" sx={{ color: "black", typography: "body1" }} href="/" underline="none">
                 Jindorry
             </Link>
         </Container>
