@@ -1,11 +1,11 @@
 import Navbar from "./clients/components/Navbar";
-import PageContainer from "./clients/components/PageContainer";
+import MainContainer from "./clients/components/MainContainer";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <PageContainer />
+      <MainContainer />
     </div>
   );
 }
