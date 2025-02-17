@@ -1,8 +1,8 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
 const card = (
   <React.Fragment>
@@ -21,7 +21,7 @@ const card = (
 export default function OutlinedCard() {
   return (
     <Box>
-      <Card variant='outlined'>{card}</Card>
+      <Card variant="outlined">{card}</Card>
     </Box>
   );
 }

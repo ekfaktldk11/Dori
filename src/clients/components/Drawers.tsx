@@ -8,6 +8,7 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import SVG_DRAWER from "../../assets/svg/drawer";
 
 export default function Drawers() {
@@ -17,13 +18,22 @@ export default function Drawers() {
     setOpen(newOpen);
   };
 
+  const navItems = {
+    About_Me: "/about",
+    Notes: "/notes",
+    Album: "/album",
+    Visitors_Book: "/visitors",
+  };
+
+  const navigate = useNavigate();
+
   const DrawerList = (
     <Box sx={{ width: 150 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {["About Me", "Note", "Album", "Visitors Book"].map((text, _index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} />
+        {Object.keys(navItems).map((key, _index) => (
+          <ListItem key={key.replace(/_/g, " ")} disablePadding>
+            <ListItemButton onClick={() => navigate(navItems[key], {})}>
+              <ListItemText primary={key} />
             </ListItemButton>
           </ListItem>
         ))}
