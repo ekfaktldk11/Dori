@@ -18,7 +18,8 @@ export default function Drawers() {
     setOpen(newOpen);
   };
 
-  const navItems = {
+  const navItems: { [key: string]: string } = {
+    Home: "/",
     About_Me: "/about",
     Notes: "/notes",
     Album: "/album",
@@ -31,9 +32,9 @@ export default function Drawers() {
     <Box sx={{ width: 150 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {Object.keys(navItems).map((key, _index) => (
-          <ListItem key={key.replace(/_/g, " ")} disablePadding>
+          <ListItem key={key} disablePadding>
             <ListItemButton onClick={() => navigate(navItems[key], {})}>
-              <ListItemText primary={key} />
+              <ListItemText primary={key.replaceAll("_", " ")} />
             </ListItemButton>
           </ListItem>
         ))}
