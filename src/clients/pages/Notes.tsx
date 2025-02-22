@@ -8,16 +8,12 @@
  * 
  */
 
-import NoteCard from "../components/NoteCard";
+import MarkdownViewer from "../components/MarkdownViewer";
 
 export default function Notes() {
   return (
     <div>
-      <NoteCard />
-      <NoteCard />
-      <NoteCard />
-      <NoteCard />
-      <NoteCard />
+      <MarkdownViewer />
     </div>
   );
 }
