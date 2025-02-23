@@ -30,7 +30,7 @@ export default function Drawers() {
 
   const DrawerList = (
     <Box sx={{ width: 150 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
+      <List sx={{ paddingTop: "3em"}}>
         {Object.keys(navItems).map((key, _index) => (
           <ListItem key={key} disablePadding>
             <ListItemButton onClick={() => navigate(navItems[key], {})}>
