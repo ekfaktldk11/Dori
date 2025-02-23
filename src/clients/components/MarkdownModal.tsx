@@ -1,4 +1,4 @@
-import { Modal, Backdrop, Box, Typography } from "@mui/material";
+import { Modal, Box, Typography } from "@mui/material";
 import ReactMarkdown from "react-markdown";
 
 interface MarkdownModalProps {
@@ -16,8 +16,6 @@ export default function MarkdownModal({
     <Modal
       open={open}
       onClose={onClose}
-      BackdropComponent={Backdrop}
-      BackdropProps={{ style: { backgroundColor: "rgba(0,0,0,0.5)" } }}
     >
       <Box
         sx={{
