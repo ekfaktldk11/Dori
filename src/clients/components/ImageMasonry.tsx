@@ -1,4 +1,4 @@
-import Box from '@mui/material/Box';
+import { Box } from '@mui/material';
 import Masonry from '@mui/lab/Masonry';
 
 export default function ImageMasonry() {
