@@ -1,5 +1,5 @@
 import * as React from "react";
-const SVG_DRAWER: React.FC = () => (
+const SVG_DRAWER: React.FC<{ color?: string }> = ({ color = "#000000" }) => (
   <svg
     width={24}
     height={24}
@@ -8,7 +8,7 @@ const SVG_DRAWER: React.FC = () => (
   >
     <path
       d="M2 2H12M2 6H12M2 10H12"
-      stroke="#000000"
+      stroke={color}
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
