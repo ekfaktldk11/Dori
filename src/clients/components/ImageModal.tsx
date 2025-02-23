@@ -20,7 +20,6 @@ export default function ImageModal({
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          backgroundColor: "rgba(0, 0, 0, 0.8)",
         }}
       >
         <IconButton
@@ -29,11 +28,9 @@ export default function ImageModal({
             position: "absolute",
             top: 16,
             right: 16,
-            backgroundColor: "rgba(172, 172, 172, 0.1)",
-            "&:hover": { backgroundColor: "rgba(172, 172, 172, 0.3)" },
           }}
         >
-          <SVG_CLOSE color="rgb(172, 172, 172)" />
+          <SVG_CLOSE />
         </IconButton>
         <img
           src={imageSrc}

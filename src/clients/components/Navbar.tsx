@@ -27,7 +27,7 @@ export default function Navbar() {
             }}
         >
             <Drawers />
-            <Link className="home" sx={{ color: "black", typography: "body1" }} href="/" underline="none">
+            <Link className="home" sx={{ typography: "body1" }} href="/" underline="none">
                 Jindorry
             </Link>
         </Container>

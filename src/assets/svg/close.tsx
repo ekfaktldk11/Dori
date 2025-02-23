@@ -1,5 +1,5 @@
 import * as React from "react";
-const SVG_CLOSE: React.FC<{ color?: string }> = ({ color = "#000000" }) => (
+const SVG_CLOSE: React.FC<{ color?: string }> = ({ color = "#1B1B1B" }) => (
   <svg
     width={24}
     height={24}
