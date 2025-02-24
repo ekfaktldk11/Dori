@@ -26,6 +26,7 @@ export default function ProfileImage({
           cursor: "pointer",
           borderRadius: "50%",
           boxShadow: 2,
+          mx: "auto",
         }}
         onClick={() => setOpen(true)}
       />
