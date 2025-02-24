@@ -30,7 +30,7 @@ export default function Drawers() {
 
   const DrawerList = (
     <Box sx={{ width: 150 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List sx={{ paddingTop: "3em"}}>
+      <List sx={{ pt: "3em"}}>
         {Object.keys(navItems).map((key, _index) => (
           <ListItem key={key} disablePadding>
             <ListItemButton onClick={() => navigate(navItems[key], {})}>
@@ -44,7 +44,7 @@ export default function Drawers() {
 
   return (
     <div className="drawer">
-      <IconButton sx={{ marginLeft: "0.2em" }} onClick={toggleDrawer(true)}>
+      <IconButton sx={{ ml: "0.2em" }} onClick={toggleDrawer(true)}>
         <SVG_DRAWER />
       </IconButton>
       <Drawer open={open} onClose={toggleDrawer(false)}>

@@ -32,7 +32,7 @@ export default function MarkdownViewer() {
   };
 
   return (
-    <Grid2 sx={{ marginX: "1em" }} container spacing={2}>
+    <Grid2 sx={{ mx: "1em" }} container spacing={2}>
       {markdownSamples.map((md) => (
         <Grid2 size={3}>
           <MarkdownCard

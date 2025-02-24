@@ -20,7 +20,7 @@ export default function Navbar() {
                     top: "0.2em",
                 },
                 ".home": {
-                    margin: "auto",
+                    m: "auto",
                 },
                 backgroundColor: "#fff",
             }}
