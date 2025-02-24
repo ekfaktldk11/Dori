@@ -6,6 +6,7 @@ export default function Navbar() {
         <Container
             maxWidth={false}
             sx={{
+                display: "flex",
                 position: "sticky",
                 top: 0,
                 width: "100%",
@@ -19,9 +20,7 @@ export default function Navbar() {
                     top: "0.2em",
                 },
                 ".home": {
-                    position: "absolute",
-                    left: "48%",
-                    top: "0.8em",
+                    margin: "auto",
                 },
                 backgroundColor: "#fff",
             }}
