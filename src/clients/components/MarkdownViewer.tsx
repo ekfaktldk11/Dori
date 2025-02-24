@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Grid2 } from "@mui/material";
 import MarkdownCard from "./MarkdownCard";
 import MarkdownModal from "./MarkdownModal";
 
@@ -10,6 +11,10 @@ const markdownSamples = [
     content: "# Hello World\nThis is **Markdown** content!",
   },
   { id: 2, title: "Markdown 2", content: "## Subtitle\n- Item 1\n- Item 2" },
+  { id: 3, title: "Markdown 3", content: "" },
+  { id: 4, title: "Markdown 4", content: "" },
+  { id: 5, title: "Markdown 5", content: "" },
+  { id: 6, title: "Markdown 6", content: "" },
 ];
 
 export default function MarkdownViewer() {
@@ -27,19 +32,15 @@ export default function MarkdownViewer() {
   };
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gap: "16px",
-        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-      }}
-    >
+    <Grid2 sx={{ marginX: "1em" }} container spacing={2}>
       {markdownSamples.map((md) => (
-        <MarkdownCard
-          key={md.id}
-          title={md.title}
-          onClick={() => handleOpen(md.content)}
-        />
+        <Grid2 size={3}>
+          <MarkdownCard
+            key={md.id}
+            title={md.title}
+            onClick={() => handleOpen(md.content)}
+          />
+        </Grid2>
       ))}
 
       <MarkdownModal
@@ -47,6 +48,6 @@ export default function MarkdownViewer() {
         content={selectedMarkdown}
         onClose={handleClose}
       />
-    </div>
+    </Grid2>
   );
 }
